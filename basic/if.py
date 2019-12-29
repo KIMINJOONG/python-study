@@ -19,3 +19,6 @@ if "a" in name:
     print("있음")
 else:
     print("없음")
+
+
+
