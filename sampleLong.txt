@@ -1,0 +1,19 @@
+#파이썬에서 파일 읽고 쓰기
+
+# file = open("sample.txt", mode="w")
+# file.write("hello python")
+# file.close()
+
+# readfile = open("./sample.txt", mode="r")
+# content = readfile.read()
+# readfile.close()
+# print(content)
+
+file = open("sample.txt", mode="w", encoding="utf-8")
+file.write("안녕 파이썬")
+file.close()
+
+readfile = open("./sample.txt", mode="r", encoding="utf-8")
+content = readfile.read()
+readfile.close()
+print(content)

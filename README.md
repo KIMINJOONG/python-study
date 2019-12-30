@@ -18,3 +18,23 @@ for num in range(1, 10):
         result.append(num + 5)
 print(result)
 ```
+
+- 파일 입출력시 with문을 사용하면 자원반납 즉 .close를 명시하지 않아도 된다.
+
+```
+with open("./sampleLong.txt", mode="r", encoding="utf-8") as s, open("sample2.txt", mode="w", encoding="utf-8") as t :
+```
+
+- 위와 같은 구문에서 코드를 깨끗하게 한다고
+
+```
+with open("./sampleLong.txt", mode="r", encoding="utf-8") as s,
+open("sample2.txt", mode="w", encoding="utf-8") as t :
+```
+
+- 위와같이 한줄을 내려버리면 파이썬은 인식을 하기못하기때문에 다음과 역슬러쉬를 추가해준다.
+
+```
+with open("./sampleLong.txt", mode="r", encoding="utf-8") as s, \
+open("sample2.txt", mode="w", encoding="utf-8") as t :
+```
