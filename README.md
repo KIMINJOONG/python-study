@@ -38,3 +38,36 @@ open("sample2.txt", mode="w", encoding="utf-8") as t :
 with open("./sampleLong.txt", mode="r", encoding="utf-8") as s, \
 open("sample2.txt", mode="w", encoding="utf-8") as t :
 ```
+
+- 파이썬의 예외처리는 try catch가 아닌 try except이다.
+
+- 함수 매개변수가 아래와같을시
+
+```
+    save_winner(*args)
+```
+
+- 앞에 아스트릭(\*)이 한개 붙어있으면 매개변수 개수가 정해져있지않고 print를 찍어보면 튜플로 반환하는걸 알수있다.
+
+```
+    save_winner2(**args)
+```
+
+- 앞에 아스트릭(\*)이 2개 붙어있으면 키와 값을 쌍으로 넘겨주어야한다 ex)
+
+```
+    save_winner2(name="홍길동", name2="가가멜")
+```
+
+```
+    def hi():
+        print("hello")
+```
+
+- 다음과 같은 변수가 존재시 기존에 호출은 hi()이지만 변수에 담을경우에는 ()생략
+
+```
+    hi()
+    hello = hi
+
+```
