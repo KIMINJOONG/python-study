@@ -71,3 +71,21 @@ open("sample2.txt", mode="w", encoding="utf-8") as t :
     hello = hi
 
 ```
+
+- 일반적으로 파이썬에서 모듈을 다운받을때는 터미널 창에서 다음과 같은 명령어를 쓰면된다.
+
+```
+pip install 모듈명
+
+설치된 모듈목록 보기
+pip freeze
+
+설치된 모듈목록 텍스트 파일로 빼기
+pip freeze > 생설할 파일이름.txt
+
+목록파일로 라이브러리 설치할때
+pip install -r 텍스트 파일명
+
+모듈 정보를 볼때
+pip show 모듈명
+```
