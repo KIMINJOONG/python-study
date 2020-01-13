@@ -58,15 +58,12 @@ def make_lotto_number(**kwargs):
                 
                 lotto = list(set(lotto))
 
+    return lotto
+
 
 count = int(input("로또 번호를 몇개 생성할까요?"))
 for j in range(count):
     print(make_lotto_number())
-
-
-    
-
-    return lotto
 
 
 
